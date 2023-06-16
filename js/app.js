@@ -73,15 +73,18 @@ function sumAndMultiply(a, b, c) { //eslint-disable-line
     
     const secondEl= multiply(tempProd,c)[0]
     
-    const thirdEl= a + " and " + b + " and " + c + " sum to " + firstEl + " . "
+    const thirdEl= a + " and " + b + " and " + c + " sum to " + firstEl + "."
     console.log (thirdEl)
 
-    const fourthEl= "The product of " + a + " and " + b + " and " + c + " is " + secondEl + " . "
+    const fourthEl= "The product of " + a + " and " + b + " and " + c + " is " + secondEl + "."
     console.log(fourthEl)
 
+    return [firstEl, secondEl, thirdEl, fourthEl];
+   
 }
 
-sumAndMultiply(4, 7, 5)
+console.log (sumAndMultiply(4, 7, 5));
+
 
 
 // Here is the test for sumAndMultiply(); uncomment it to run it
@@ -103,9 +106,14 @@ Test this function by hand in the console to get it working, and when you think 
 let testArray = [2, 3, 4]; //eslint-disable-line
 
 function sumArray(sumArr) { //eslint-disable-line
+console.log(sumArr)
+
+
+
 
 }
 
+sumArray(testArray)
 // Here is the test for sumArray(); uncomment it to run it
 
 // testSumArray(testArray);
